@@ -1,24 +1,24 @@
-Hi <b> there </b> world <br><br>
+Hi <b>there</b> World <br><br>
 
-<input id="myInput" type=text value="mary"> <br><br>
+<input id="myInput" type=text value="Mary"> <br><br>
 
 
-
-<input type=button value="Run" onclick="{
+<input type=button value="Run Wow" onclick="{
 
   myOut = document.getElementById('myArea')
-  myIn =  document.getElementById('myInput')
-  // alert(myIn.value)
-  
+  myIn  = document.getElementById('myInput')
+  //alert(myIn.value)
+
   for (myCount = 5; myCount >= 1; myCount--){
 
-    myOut.innerHTML += myIn.value+ ' ' + myIn.value
-    if (myCount == 3){
+     myOut.innerHTML += myCount + ' ' + myIn.value
 
-      myOut.innerHTML += ' cool'
+     if (myCount == 3){
 
-    }
-    myOut.innerHTML += '<br>'
+        myOut.innerHTML += ' Cool'
+
+     }
+     myOut.innerHTML +=  '<br>'
   }
 
 }"> <br><br>
@@ -28,7 +28,9 @@ Hi <b> there </b> world <br><br>
 <div id="myArea" > Your output will go here <br></div> <br>
 
 <input type=button value="Show myOut" onclick="{
-
+  
    alert('The variable myOut contains ' + myOut.innerHTML)
 
 }">
+
+
